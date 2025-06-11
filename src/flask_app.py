@@ -5,9 +5,9 @@ app = Flask(__name__)
 query = "SELECT quote, author FROM quotes ORDER BY random() LIMIT 1;"
 
 @app.route("/")
-def index(): 
+def index():
 
-    con = sqlite3.connect("data\data.db")
+    con = sqlite3.connect("data/data.db")
     cur = con.cursor()
     response = cur.execute(query).fetchone()
 
