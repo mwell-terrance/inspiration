@@ -14,4 +14,6 @@ def index():
     con = sqlite3.connect("data/data.db")
     cur = con.cursor()
     response = cur.execute(query).fetchone()
+    con.close()
     return render_template("base.html", quote=response[0], author=response[1])
+

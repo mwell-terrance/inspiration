@@ -10,13 +10,32 @@
     <title>Inspriation</title>
     
   </head>
-  <body>
+  <body class="container-fluid bg-dark text-white">
 
-    <div class="container">
+    <div class="container py-5">
 
-      <blockquote>{{ quote }}</blockquote><footer>{{ author }}</footer>
+      <div class="row">
+
+        <div class="container col-1"></div>
+
+        <div class="container col">
+
+          <blockquote class="blockquote">{{ quote }}</blockquote><footer class="blockquote-footer text-white">{{ author }}</footer>
+
+        </div>
+
+        <div class="container col-1"></div>
+        
+      <div>
+      
+      <div class="row">
+
+        <a href="/" class="btn btn-primary">Reload</a>
+
+      </div>
 
     </div>
 
   </body>
+
 </html>
